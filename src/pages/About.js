@@ -15,24 +15,25 @@ const About = () => {
         <IoIosArrowBack />
       </button>
       <div className="about-container">
-        <p>ABOUT ME</p>
+        <p>درباره من</p>
         <p>
-          Hello, I’m Rasool, a self-taught frontend developer based in
-          Kermanshah, Iran.
+          سلام من رسول هستم، یک توسعه‌دهنده فرانت‌ اند خودآموخته ، ساکن
+          کرمانشاه.
         </p>
         <p>
-          In 2021, with the advice and encouragement of two of my friends who
-          are senior web developers, I decided to leave my previous field of
-          work, content marketing and I started learning the basics of web
-          developing.
+          در سال 1400 با مشاوره و تشویق دو تن از دوستانم که توسعه دهندگان ارشد
+          وب هستند، حوزه کاری قبلی خودم رو که تولید محتوا بود رو رها کردم و شروع
+          به یادگیری اصول اولیه برنامه نویسی وب وبه طور ویژه فرانت اند کردم.
         </p>
         <p>
-          Having worked continuously for 6 years since my marriage, I never had
-          a chance to reconsider my career path. But new ideas and goals came to
-          my mind, and I started to explore different options. I was interested
-          in the tech industry, and programmers often don't have a strong need
-          for formal education. Access to free online resources made me feel
-          that frontend development might be the answer.
+          با گذشت حدود شش سال از ازدواجم که شروع فاز جدید زندگیم محسوب می شد هیچ
+          وقت شانس و فرصت این رو نداشتم که به علاقه واقعی و مسیر شغلی که می
+          خواستم فکر کنم، اما بعد از اون روز و صحبت هایی که با دوستانم داشتم
+          ایده ها و اهداف جدید و لذت بخشی توی ذهنم ایجاد شد و تصمیم بر ورود به
+          مسیر تازه و جذابی که توی ذهنم تجسم می کردم گرفتم. با علاقه بسیارزیادی
+          که به حوزه تکنولوژی داشتم و آشنایی با زبان انگلیسی و همچنین وجود منابع
+          بسیار زیاد والبته کاربردی که توی این حوزه وجود داشت بلاخره مسیرتازه
+          زندگیم رو استارت زدم .{" "}
         </p>
         <img
           loading="lazy"
@@ -41,41 +42,42 @@ const About = () => {
           alt="self-growth"
         ></img>
         <p>
-          After about 5 months from the beginning of learning, I had learned
-          Html and Css and could do the appearance and template of my exercises,
-          which were usually from W3Schools and YouTube videos. After that, I
-          started learning JavaScript and after 1 month, I realized that to
-          speed up the learning process and understand the content more deeply,
-          I should use a non-free and professional resource.<br></br>
-          After researching and getting advice, I got to know
-          <span>
-            <a href="https://fronthooks.ir/"> Fronthooks Academy</a>
-          </span>
-          , which was a very important point for my progress in learning the
-          basics of programming and JavaScript language.
-        </p>
-        <p>
-          Being self-taught is hard, when I started the scariest thing was to
-          face a problem, I struggled with, and couldn’t move further because of
-          it. But during this year I always found a way to solve it, sometimes
-          it took me days and numerous attempts. I enjoyed the challenge and
-          landing on the right solution.
-        </p>
-        <p>
-          I have a passion for web development. It gives me the possibility to
-          challenge myself and use a mix of technologies and creativity. I like
-          being able to see the result quickly and the endless learning process.
+          بعد از گذشت حدود ۵ ماه، آشنایی نسبی با مفاهیم پایه وزبان های نشانه
+          گذاری Html و Css پیدا کردم و می تونستم قالب استاتیک تمرین ها و پروژه
+          های خودم رو که قالبا از پروژه های تمرینی یوتیوب و سایت دریبل بودند رو
+          پیاده کنم. در همین زمان شروع به یادگیری زبان برنامه نویسی جاوا اسکریپت
+          کردم که شیرینی ارتباط با کامپیوتر نیروی محرکه ی جدیدی شد برای سرعت
+          دادن به فرآیند یادگیریم. اما بعد از یک ماه از شروع یادگیری جاوا
+          اسکریپت به این نتیجه رسیدم که برای سرعت بخشیدن به یادگیری و درک عمیق
+          تر مطالب باید سراغ یک منبع حرفه ای و غیر رایگان برم
           <br></br>
-          And after more than a year of stepping on this new and attractive
-          path, I was able to learn a whole new and practical skill and use it
-          in many practice projects. You can see some of my projects
+          که بعد از کلی تحقیق با
           <span>
-            <a href="https://github.com/Rasool-Karami1994">here</a>
+            <a href="https://fronthooks.ir/"> آکادمی فرانت هوکس </a>
           </span>
-          .
+          آشنا شدم که بهترین تصمیم و اتفاق مسیر یادگیری من هم همین تصمیم بود.
         </p>
         <p>
-          Here are the technologies I use:
+          وقتی که به صورت خودآموخته شروع به یادگیری برنامه نویسی می کنید چالش ها
+          و اتفاقات بد زیادی می تونه پیش روی شما قرار بگیره که از مهم ترین اون
+          ها می تونم به مواجه با مباحث و مشکلاتی که به دلیل ندانستن جواب و
+          پیچدگی اون مطلب چند روز شمارودرگیر خودش کنه، یا اینکه ممکنه توی این
+          مسیر نسبتا طولانی یه جاهایی خسته شید و کم بیارید، اشاره کنم. اما هربار
+          که هر کدوم از این چالش ها برای من اتفاق می افتاد با رسیدن به جواب و
+          مروراهداف دوباره موتورم روشن می شد و لذت یادگیری چیزهای جدید من رو
+          سرمست و مشتاق تر از قبل می کرد.{" "}
+        </p>
+        <p>
+          و بعد از گذشت بیش از یک سال از شروع این مسیر جذاب، من کلی چیز تازه و
+          مهارت کاربردی وتخصصی رو یادگرفتم که تونستم اون ها رو در قالب پروژه ها
+          و مینی پروژه های متنوع تمرین کنم و نمایش بدم.<br></br> شما می تونید از
+          <span>
+            <a href="https://github.com/Rasool-Karami1994">اینجا</a>
+          </span>
+          تعدادی از این پروژه ها رو ببینید.
+        </p>
+        <p>
+          مهمترین تکنولوژی های که من با اون ها کار می کنم:
           <ul>
             <li>- HTML, CSS (Sass)</li>
             <li>- JavaScript (ES6+)</li>
@@ -83,11 +85,11 @@ const About = () => {
           </ul>
         </p>
         <p>
-          I am now ready to cooperate and join a professional team so that I can
-          use my skills to help them and also improve myself by learning new
-          skills and experiences from them. Looking for a local or remote
-          developer position. I'm more interested in working with React. To
-          apply for employment, please contact me:
+          من آمادگی این رو دارم که با مهارت های که کسب کردم به یک تیم حرفه ای
+          ملحق شم و علاوه بر کمک به اون تیم تجربیات و مهارت های خودم رو ارتقا
+          بدم. علاقه مند به کار با کتابخانه ری اکت و کار به صورت دورکار هستم
+          واگر شماهم مثل من مایل به همکاری بودید می تونید از طریق آدرس پایین با
+          من ارتباط بگیرید:<br></br>
           <span>
             <a href="mailto:rasoolkarami2304@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body">
               rasoolkarami2304@gmail.com

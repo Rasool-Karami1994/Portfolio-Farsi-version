@@ -7,8 +7,7 @@ const CommentsDemoExperience = () => {
   const item = [
     {
       image1: "/images/comments.png",
-      Title: "Persian Comments App",
-      subTitle: "Built with React & Css",
+      Title: "سیستم نظردهی فارسی",
       live: "https://rasool-http-app-demo.netlify.app/",
       gitHub: "https://github.com/Rasool-Karami1994/Comments-demo",
     },
@@ -29,16 +28,16 @@ const CommentsDemoExperience = () => {
           <div className="first-section-contaiener">
             <div className="first-section-left">
               <h3>{item.Title}</h3>
-              <p>{item.subTitle}</p>
+              <p>ساخته شده با React & Css</p>
               <div className="button-container">
                 <button>
                   <a href={item.live} target="blank">
-                    Live
+                    دمو
                   </a>
                 </button>
                 <button>
                   <a href={item.gitHub} target="blank">
-                    GitHub
+                    گیت هاب
                   </a>
                 </button>
               </div>
@@ -54,15 +53,15 @@ const CommentsDemoExperience = () => {
         <div className="second-section-container">
           <img src={comment} className="first-img" alt="this is an img"></img>
           <div className="right-side-container">
-            <h3>DESCRIPTION</h3>
+            <h3>توضیحات</h3>
             <p>
-              In this program, I used React Router Dom to simulate a part of a
-              page that was selected to add comments and display comments. My
-              main goal was to work with React Router Dom and custom parameters.
+              من توی این برنامه از ری اکت روتر دام ورژن 6 برای ایجاد یک قسمت از
+              سیستم نظر دادن استفاده کردم که می تونید نظر خودتون رو وارد کنیدو
+              سایر نظر هارو ببینید . هدف اصلی من از انجام این مینی پروژه کار با
+              ری اکت روتر دام وپارامز های سفارشی بود. In this program, I used
             </p>
             <p>
-              And the main feature of this program is having Persian language
-              which is implemented with one of the Google fonts.
+              .ویژگی اصلی این پروژه هم فارسی بودن و استفاده از فونت سفارشی است
             </p>
           </div>
         </div>

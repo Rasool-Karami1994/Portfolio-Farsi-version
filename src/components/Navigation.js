@@ -5,10 +5,9 @@ const Navigation = () => {
   const params = useParams();
   console.log(params);
   const items = [
-    { name: "HOME", to: "/" },
-    { name: "ABOUT", to: "/about" },
-    { name: "EXPERIENCES", to: "/experiences" },
-    // { name: "HIRE ME", to: "/hire-me" },
+    { name: "خانه", to: "/" },
+    { name: "درباره من", to: "/about" },
+    { name: "تجربیات", to: "/experiences" },
   ];
 
   return (

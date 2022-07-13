@@ -7,8 +7,7 @@ const WeatherAppExperience = () => {
   const item = [
     {
       image1: "/images/weather1.png",
-      Title: "Weather App",
-      subTitle: "Built with React & Css",
+      Title: "برنامه هواشناسی",
       live: "https://rasool-todolist-app.netlify.app/",
       gitHub: "https://github.com/Rasool-Karami1994/weather-application",
     },
@@ -28,16 +27,16 @@ const WeatherAppExperience = () => {
           <div className="first-section-contaiener">
             <div className="first-section-left">
               <h3>{item.Title}</h3>
-              <p>{item.subTitle}</p>
+              <p>ساخته شده با React & Css</p>
               <div className="button-container">
                 <button>
                   <a href={item.live} target="blank">
-                    Live
+                    دمو
                   </a>
                 </button>
                 <button>
                   <a href={item.gitHub} target="blank">
-                    GitHub
+                    گیت هاب
                   </a>
                 </button>
               </div>
@@ -53,16 +52,16 @@ const WeatherAppExperience = () => {
         <div className="second-section-container">
           <img src={weather} className="first-img" alt="this is an img"></img>
           <div className="right-side-container">
-            <h3>DESCRIPTION</h3>
+            <h3>توضیحات</h3>
             <p>
-              In this application, I use a real api to receive and display the
-              weather information of any city that is typed in the name box, so
-              that you can check any city as many times as you want without
-              restrictions.
+              در این اپلیکیشن من از یک ای پی آی واقعی برای گرفتن اطلاعات دقیق
+              هواشناسی استفاده کردم. شما کافیه که نام شهر موردنظرتون رو در باکس
+              جست وجو وارد کنید و دکمه رو فشار بدید و کمتر از چند صدم ثانیه
+              اطلاعات اون لوکیشن برای شما نمایش داده می شه.
             </p>
             <p>
-              This application is fully responsive and was an exercise to work
-              with api and conditional rendering
+              این برنامه کاملا ریسپانسیو بوده و هدف من از انجام این تمرین کار با
+              ای پی آی و کاندیشنال رندرینگ بود
             </p>
           </div>
         </div>

@@ -6,14 +6,14 @@ const HomePage = () => {
     <div className="home-page-container">
       <div className="home-page-content">
         <h1>
-          I'm Rasool <span>KARAMI</span>
+          <span>رسول </span>کرمی
         </h1>
-        <h3>Front-End Web Developer</h3>
+        <h3>توسعه دهنده فرانت اند</h3>
         <p>
-          Here you can see all of my <br />
-          web development skills & experiences
+          از اینجا می تونیدمهارت ها
+          <br />و تجربیات من رو مشاهده کنید
         </p>
-        <a href="/">DOWNLOAD CV</a>
+        <a href="/"> دانلود رزومه</a>
       </div>
       <div className="images">
         <img src={blob} alt="blob" className="shape" />
