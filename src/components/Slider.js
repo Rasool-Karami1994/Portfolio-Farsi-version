@@ -22,8 +22,24 @@ const SliderComponent = () => {
         grabCursor={true}
         modules={[FreeMode]}
         className="my-swiper-slider"
-        slidesPerView={2}
-        spaceBetween={30}
+        breakpoints={{
+          1800: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1000: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        }}
       >
         <SwiperSlide className="slides">
           <img alt="shop" src={formik} className="slider-images"></img>

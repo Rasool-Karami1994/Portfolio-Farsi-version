@@ -13,7 +13,10 @@ const HomePage = () => {
           از اینجا می تونیدمهارت ها
           <br />و تجربیات من رو مشاهده کنید
         </p>
-        <a href={require("../path/CV-Template.docx")} download="myFile">
+        <a
+          href={require("../path/Rasool-Karami-Resume.docx")}
+          download="myFile"
+        >
           دانلود رزومه
         </a>
       </div>
