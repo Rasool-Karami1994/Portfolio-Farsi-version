@@ -1,8 +1,9 @@
 import React from "react";
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { FiArrowUpLeft } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-
+import SliderComponent from "./Slider";
+import "./Experiences.css";
 const ExperiencesComponent = () => {
   const navigate = useNavigate();
   const redirector = () => {
@@ -11,23 +12,23 @@ const ExperiencesComponent = () => {
 
   const items = [
     {
-      image: "/images/todolist.PNG",
-      title: "برنامه لیست کارهای روزانه",
-      link: "https://rasool-todolist-app.netlify.app/",
+      image: "/images/shop.PNG",
+      title: "فروشگاه آنلاین کفش",
+      subTitle: "فروشگاه اینترنتی با بک اند واقعی",
       id: 1,
     },
     {
-      image: "/images/comments-demo.PNG",
-      title: "دمو سیستم نظردهی",
-      link: "https://rasool-http-app-demo.netlify.app/",
+      image: "/images/real-estate.PNG",
+      title: "بانک اطلاعات املاک",
+      subTitle: "وب اپلیکیشنی برای ذخیره و دسترسی آسان به اطلاعات املاک",
 
       id: 2,
     },
 
     {
-      image: "/images/weather-app.PNG",
-      title: "برنامه هواشناسی",
-      link: "https://rasool-weather-app.netlify.app/",
+      image: "/images/farsi-portfolio.PNG",
+      title: "پورتفولیو فارسی",
+      subTitle: "یک پورتفولیو ساده و جامع",
 
       id: 3,
     },
@@ -43,45 +44,30 @@ const ExperiencesComponent = () => {
         <IoIosArrowBack />
       </button>
       <div className="page-container">
-        <div className="experinces-container">
-          {items.map((item) => {
-            return (
-              <div key={item.id} className="experiences-card">
-                <img
-                  name={item.id}
-                  onClick={showSelectedItem}
-                  src={item.image}
-                  alt="this is an img"
-                  className="expeiences-card-img"
-                ></img>
-                <div className="experiences-card-content">
-                  <p>{item.title}</p>
-                  <a href={item.link} target="blank">
-                    <span>
-                      <FaLongArrowAltLeft />
-                    </span>
-                    دیدن دموی برنامه در پلتفرم نتلیفای
-                  </a>
-                  <button
-                    name={item.id}
-                    onClick={() => showSelectedItem(item.id)}
-                  >
-                    مشاهده
-                  </button>
+        <div className="experinces-section">
+          <SliderComponent />
+          <div className="selected-projects-container">
+            {items.map((item) => {
+              return (
+                <div className="selected-project" key={item.id}>
+                  <div className="selected-project-content-section">
+                    <h2>{item.title}</h2>
+                    <p>{item.subTitle}</p>
+                    <button onClick={() => showSelectedItem(item.id)}>
+                      مشاهده پروژه <FiArrowUpLeft />
+                    </button>
+                  </div>
+                  <div className="selected-project-image-section">
+                    <img
+                      src={item.image}
+                      alt="project"
+                      className="experiences-img"
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-        <div className="second-section">
-          <h4 className="second-section-content">
-            !برای دیدن سایر تجربیات و پروژه های من از دکمه زیر استفاده بفرمایید!
-          </h4>
-          <button className="second-section-btn">
-            <a href="https://github.com/Rasool-Karami1994" target="blank">
-              گیت هاب
-            </a>
-          </button>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

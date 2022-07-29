@@ -109,7 +109,7 @@ nav ul li a:hover {
     font-size: 10px;
     margin-top: 10px;
     /* margin-bottom: 15px; */
-    margin-left: 10px;
+    margin-left: 30px;
   }
 
   .logo {
@@ -135,6 +135,8 @@ nav ul li a:hover {
 
 .home-page-container {
   display: flex;
+  width: 100%;
+  height: 100vh;
 }
 .home-page-content {
   margin-left: 15%;
@@ -196,35 +198,36 @@ span {
 
 @media screen and (max-width: 1150px) {
   .images {
-    width: 45%;
-    height: 80%;
+    display: none;
   }
-  .images img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
-    width: 350px;
-    height: 600px;
+  .home-page-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
   }
+
   .home-page-content {
-    margin-left: 10%;
-    margin-top: 12%;
+    margin-left: 0;
   }
 }
 
-@media screen and (max-width: 680px) {
-  .images {
-    display: none;
+@media screen and (max-width: 700px) {
+  .home-page-content {
+    margin-top: 13%;
   }
 }
 
 /* about-page styles*/
-
+.about-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
 .about-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 6.4rem;
   font-size: 18.5px;
@@ -259,6 +262,10 @@ span {
   display: block;
   margin-bottom: 20px;
 }
+.about-container p ul {
+  display: block;
+  margin-top: 20px;
+}
 
 .about-title {
   margin-bottom: 35px;
@@ -280,8 +287,9 @@ span {
     align-items: flex-start;
   }
   .about-img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 450px;
+    margin: 30px 0;
   }
   .about-container p {
     display: block;
@@ -290,7 +298,7 @@ span {
 }
 @media screen and (max-width: 480px) {
   .about-img {
-    width: 250px;
+    width: 80%;
     height: 250px;
   }
   .about-container p {
@@ -404,23 +412,37 @@ footer {
   }
 }
 /* Experiences page styles*/
+.page-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.experinces-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
 
 .experinces-container {
-  columns: 33% 3;
   display: flex;
-  width: 70%;
+  width: 100%;
   justify-content: space-evenly;
   padding: 10px 10px;
   margin: auto;
   margin-top: 50px;
   align-items: flex-start;
 }
+
 .second-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 180px 0;
+  margin: 180px 0 100px 0;
 }
 .second-section-content {
   font-size: 40px;
@@ -486,152 +508,8 @@ footer {
     margin-bottom: 30px;
   }
 }
-.experiences-card {
-  display: flex;
-  flex-direction: column;
-  width: 33%;
-  height: 490px;
-  border-radius: 8px;
-  margin: 0 25px;
-  box-shadow: 4px 4px 15px #aaaaaa;
-}
-.experiences-card:hover {
-  transform: scale(0.95);
-}
-.expeiences-card-img {
-  width: 100%;
-  height: 60%;
-  border-radius: 8px 8px 0 0;
-  border: none;
-  cursor: pointer;
-}
-
-.experiences-card-content {
-  background-color: #f4f8fb;
-  display: flex;
-  width: 100%;
-  height: 40%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  border-radius: 0 0 8px 8px;
-}
-.experiences-card-content p {
-  font-size: 30px;
-  color: #212121;
-  font-weight: bold;
-}
-.experiences-card-content button {
-  background: #212121;
-  padding: 10px 18px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  display: inline-block;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.experiences-card-content button:hover {
-  transform: scale(0.95);
-}
-.experiences-card-content a {
-  text-decoration: none;
-  color: #ea901c;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-}
-.experiences-card-content a:hover {
-  transform: scale(0.95);
-  font-weight: bold;
-}
-.experiences-card-content a span {
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-}
-.experiences-card-content a span:hover {
-  transform: scale(0.95);
-  font-weight: bold;
-}
-@media screen and (max-width: 1320px) {
-  .experinces-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 100px;
-  }
-
-  .experiences-card {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    min-height: 550px;
-    border-radius: 8px;
-    margin: 40px 5px;
-    box-shadow: 4px 4px 15px #aaaaaa;
-  }
-  .experiences-card-content p {
-    font-size: 35px;
-    color: #212121;
-    font-weight: bold;
-  }
-  .experiences-card-content a {
-    text-decoration: none;
-    color: #ea901c;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-  .experiences-card-content a span {
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 631px) {
-  .experiences-card {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-height: 300px;
-    min-height: 200px;
-    border-radius: 8px;
-    margin: 40px 5px;
-    box-shadow: 4px 4px 15px #aaaaaa;
-  }
-  .experiences-card-content p {
-    font-size: 20px;
-    color: #212121;
-    font-weight: 700;
-  }
-  .experiences-card-content a {
-    text-decoration: none;
-    color: #ea901c;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-  }
-  .experiences-card-content a span {
-    margin-right: 5px;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-  }
-}
 
 /*experiense page*/
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -640,10 +518,11 @@ footer {
   margin: auto;
   width: 80%;
   direction: rtl;
+  height: auto;
 }
 .first-section-contaiener {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   padding: 10px;
@@ -662,22 +541,22 @@ footer {
   justify-content: space-between;
   width: 50%;
   height: 80%;
-  direction: rtl;
 }
 .first-section-left h3 {
   color: #212121;
-  font-size: 65px;
+  font-size: 57px;
   font-weight: bolder;
   opacity: 0.9;
 }
 .first-section-left p {
   color: #212121;
   opacity: 0.7;
-  font-size: 40px;
+  font-size: 35px;
   margin: 20px 0;
 }
 .button-container {
   display: flex;
+  margin-right: -10px;
 }
 .button-container button {
   background: #212121;
@@ -688,18 +567,17 @@ footer {
   display: inline-block;
   border-radius: 8px;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   font-size: 20px;
 }
 .button-container a {
   color: #fff;
   text-decoration: none;
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1480px) {
   .first-section-left h3 {
     color: #212121;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: bold;
     opacity: 0.9;
   }
@@ -707,6 +585,21 @@ footer {
     color: #212121;
     opacity: 0.7;
     font-size: 30px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .first-section-left h3 {
+    color: #212121;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+  .first-section-left p {
+    color: #212121;
+    opacity: 0.7;
+    font-size: 22px;
     margin: 20px 0;
   }
 }
@@ -716,76 +609,57 @@ footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-    padding: 5px;
+    margin: auto;
+    padding: 10px;
     width: 100%;
-  }
-  .button-container button {
-    background: #212121;
-    padding: 10px 9px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 7px;
-    font-size: 16px;
-    width: 90px;
-    height: 60px;
   }
 
   .first-img {
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 40%;
     margin: 50px 0;
   }
-  .first-section-left h3 {
-    color: #212121;
-    font-size: 30px;
-    font-weight: bold;
-    opacity: 0.9;
+  .first-section-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
-  }
-  .first-section-left p {
-    color: #212121;
-    opacity: 0.7;
-    font-size: 20px;
-    margin: 20px 0;
+    height: 80%;
+    margin-top: 50px;
   }
 }
 
-.second-section-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 150px auto;
-  padding: 10px;
+.description-container {
   width: 100%;
-}
-.second-section-container img {
-  width: 35%;
   height: 80%;
-  margin-right: 30px;
-}
-.right-side-container {
-  width: 65%;
-  height: 80%;
-  margin-right: 60px;
-  direction: rtl;
+  margin: 250px 0 50px 0;
 }
 
-.right-side-container h3 {
+.description-container h3 {
   font-size: 40px;
   font-weight: bold;
   opacity: 0.8;
-  margin-right: 30px;
+  margin-bottom: 40px;
 }
-.right-side-container p {
+.description-container p {
   font-size: 28px;
   opacity: 0.8;
-  margin: 30px;
+  margin-bottom: 15px;
+}
+
+.description-container-img {
+  border: 2px solid #212121;
+  border-radius: 10px;
+  width: 90%;
+  margin: 250px 0 100px 0;
+}
+
+.description-container h3 {
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -798,29 +672,26 @@ footer {
     padding: 10px;
     width: 100%;
   }
-  .right-side-container {
-    width: 65%;
-    height: 80%;
-    /* margin-right: 60px; */
-    margin: 0;
-    direction: rtl;
+  .description-container {
+    margin: 250px 0 0 0;
   }
-  .right-side-container p {
+  .description-container p {
     font-size: 22px;
     opacity: 0.8;
     margin: 15px 0 15px 0;
   }
 
-  .right-side-container h3 {
+  .description-container h3 {
     font-size: 30px;
     font-weight: bold;
     opacity: 0.8;
     margin: 30px 0 30px 0;
   }
   .second-section-container img {
-    width: 80%;
-    height: 1000%;
-    margin-left: 0;
-    margin: 30px 0;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin: 0;
+    margin-bottom: 200px;
   }
 }

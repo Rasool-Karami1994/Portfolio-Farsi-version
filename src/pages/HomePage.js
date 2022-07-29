@@ -13,7 +13,9 @@ const HomePage = () => {
           از اینجا می تونیدمهارت ها
           <br />و تجربیات من رو مشاهده کنید
         </p>
-        <a href="/"> دانلود رزومه</a>
+        <a href={require("../path/CV-Template.docx")} download="myFile">
+          دانلود رزومه
+        </a>
       </div>
       <div className="images">
         <img src={blob} alt="blob" className="shape" />

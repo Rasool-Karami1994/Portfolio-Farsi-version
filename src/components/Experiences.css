@@ -1,0 +1,122 @@
+.selected-projects-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 220px 0;
+  direction: rtl;
+}
+.selected-project {
+  width: 100%;
+  display: flex;
+  height: auto;
+  /* border: 2px solid #000; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 0;
+}
+.selected-project-content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  height: 500px;
+}
+.selected-project-content-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #212121;
+  color: #212121;
+  padding-bottom: 20px;
+}
+.selected-project-content-section p {
+  color: #212121;
+  font-size: 18px;
+  opacity: 0.6;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+.selected-project-content-section button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+  color: #212121;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30;
+}
+
+.selected-project-image-section {
+  width: 60%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.experiences-img {
+  position: relative;
+  height: 350px;
+  width: 70%;
+  border-radius: 20px;
+  border: 2px solid #212121;
+}
+@media screen and (max-width: 1000px) {
+  .selected-projects-container {
+    margin: 70px 0;
+  }
+  .selected-project-image-section {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .selected-project-image-section {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .selected-project-content-section {
+    width: 30%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .selected-project {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+  }
+  .selected-project-image-section {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-project-content-section {
+    width: 80%;
+    height: 500px;
+  }
+  .experiences-img {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #212121;
+    margin-bottom: -80px;
+  }
+}
