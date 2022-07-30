@@ -15,14 +15,21 @@ import finencial from "../assets/img/expense-tracker.PNG";
 const SliderComponent = () => {
   return (
     <div className="slider-container">
-      <h1 className="slider-title">تازه ترین کارهای من</h1>
-      <h4 className="slider-subtitle">مروری بر پروژه ها</h4>
+      <div className="slider-title-container">
+        <h1 className="slider-title">تازه ترین کارهای من</h1>
+        <h4 className="slider-subtitle">مروری بر پروژه ها</h4>
+      </div>
+
       <Swiper
         freeMode={true}
         grabCursor={true}
         modules={[FreeMode]}
         className="my-swiper-slider"
         breakpoints={{
+          2200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
           1800: {
             slidesPerView: 3,
             spaceBetween: 30,
