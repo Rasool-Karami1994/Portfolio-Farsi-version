@@ -2,8 +2,13 @@ import React from "react";
 import { FiArrowUpLeft } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import SliderComponent from "./Slider";
 import "./Experiences.css";
+import formik from "../assets/img/formik.PNG";
+import weather from "../assets/img/weather.PNG";
+import todoList from "../assets/img/todolist.PNG";
+import finencial from "../assets/img/expense-tracker.PNG";
+import "./Card.css";
+
 const ExperiencesComponent = () => {
   const navigate = useNavigate();
   const redirector = () => {
@@ -45,7 +50,6 @@ const ExperiencesComponent = () => {
       </button>
       <div className="page-container">
         <div className="experinces-section">
-          <SliderComponent />
           <div className="selected-projects-container">
             {items.map((item) => {
               return (
@@ -68,6 +72,37 @@ const ExperiencesComponent = () => {
               );
             })}
           </div>
+          <section className="cards-section" cards-section>
+            <div className="images-cont">
+              <a
+                href="http://rasool-signup-form.netlify.app"
+                className="cards-link"
+              >
+                <img alt="shop" src={formik} className="card-img"></img>
+              </a>
+              <a
+                href="http://rasool-weather-app.netlify.app"
+                className="cards-link"
+              >
+                <img alt="shop" src={weather} className="card-img"></img>
+              </a>
+            </div>
+
+            <div className="images-cont">
+              <a
+                href="http://rasool-expense-tracker.netlify.app"
+                className="cards-link"
+              >
+                <img alt="shop" src={finencial} className="card-img"></img>
+              </a>
+              <a
+                href="http://rasool-todolist-app.netlify.app"
+                className="cards-link"
+              >
+                <img alt="shop" src={todoList} className="card-img"></img>
+              </a>
+            </div>
+          </section>
         </div>
       </div>
     </>

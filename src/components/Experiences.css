@@ -44,11 +44,15 @@
   background-color: #fff;
   border: none;
   cursor: pointer;
-
+  padding: 10px;
   color: #212121;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 30;
+}
+.selected-project-content-section button:hover {
+  border-radius: 8px;
+  border-radius: 2px solid #212121;
 }
 
 .selected-project-image-section {
@@ -75,7 +79,7 @@
   }
   .selected-project-image-section {
     width: 60%;
-    max-height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +147,29 @@
     min-height: 280px;
     width: auto;
     min-width: 380px;
+    border-radius: 20px;
+    border: 2px solid #212121;
+    margin-bottom: -80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  
+  .selected-project-image-section {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+   .experiences-img {
+    height: 100%;
+    max-height: 250px;
+    min-height: 200px;
+    width: auto;
+    min-width: 280px;
     border-radius: 20px;
     border: 2px solid #212121;
     margin-bottom: -80px;
