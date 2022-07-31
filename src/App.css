@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 100;
 }
 
 @media screen and (max-width: 990px) {
@@ -345,6 +346,7 @@ footer {
   width: auto;
   height: 60px;
   display: block;
+  z-index: 100;
 }
 
 @media screen and (max-width: 990px) {

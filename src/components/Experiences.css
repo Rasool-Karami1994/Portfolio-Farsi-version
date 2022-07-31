@@ -23,7 +23,7 @@
   align-items: flex-start;
   width: 40%;
   height: 500px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .selected-project-content-section h2 {
   font-size: 42px;
@@ -135,6 +135,7 @@
     width: 80%;
     height: 500px;
     margin-bottom: 70px;
+    margin-left: 0;
   }
   .experiences-img {
     height: 100%;
